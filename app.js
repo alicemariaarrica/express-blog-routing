@@ -31,7 +31,7 @@ const app = express()
 
 
 //per visualizzare tutti i cibi
-const menu = require('./db/posts.js')
+const posts = require('./db/posts.js')
 
 app.get('/posts', (req, res) => {
   res.json({ data: posts, count: posts.length })
