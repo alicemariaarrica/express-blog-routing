@@ -1,4 +1,4 @@
-const posts = [
+const arrayPosts = [
   {
     title: "Ciambellone",
 		slug: "ciambellone",
@@ -43,6 +43,6 @@ const posts = [
   },
 ];
 //1.
-module.exports= posts;
+module.exports= arrayPosts;
 
 

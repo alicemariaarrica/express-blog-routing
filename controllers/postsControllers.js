@@ -13,10 +13,10 @@
 
 //router.get('/:slug', postsController.show); //rotta per visualizzare post specific
 
-const db = require('../db/arrayPosts.js');
+const import_arrayPosts = require('../db/arrayPosts.js');
 
 
-const index = (req, res) => {
+const index = (req, res) => {  //qua ho scritto la rotta index per la risposta alla richiesta di mostrare tutti i post
   let markup = '<ul>';
 
   db.forEach(post => {
@@ -46,7 +46,7 @@ const index = (req, res) => {
 };
 
 
-const show = (req, res) => {
+const show = (req, res) => { //qua ho scritto la rotta show per la risposta alla richiesta di mostare un post specifico
   const post = db.find(post => post.slug === req.params.slug);
   if (!post) {
     return res.status(404).json({

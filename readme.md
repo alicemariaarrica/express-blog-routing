@@ -132,6 +132,7 @@ next let's create a second endpoint that will return a single pizza based on its
 
 ```js
 // (show) Get a single pizza by its ID
+
 app.get('/pizze/:id', (req, res) => {
 
   // find the pizza by id
@@ -278,7 +279,7 @@ app.get('/pizze/:id', PizzaController.show);
 
 ### Create the router file
 
-Let's create a new folter where we can place all routes related to a given entity. In our case, it will be pizza.js.
+Let's create a new folder where we can place all routes related to a given entity. In our case, it will be pizza.js.
 
 ```bash
 mkdir routes
