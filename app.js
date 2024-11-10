@@ -15,7 +15,7 @@ const postsRouter = require('./routers/posts');
 const app = express();
 
 
-app.use('/posts', postsRouter);
+app.use('/posts', postsRouter); //(middleware) qua ho registrato il router poiche ogni richiesta che inizia con /posts sarà gestita dal postsRouter
 
 app.listen(3000, () => {
   console.log('Server in ascolto sulla porta 3000');
