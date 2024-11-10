@@ -12,7 +12,7 @@
 
 const express = require('express'); //importa express su questo file perchè ogni file su node.js è isolato
 const router = express.Router(); //crea effettivamente il router
-
+const posts = require('../db/arrayPosts.js');
 
 
 const postsController = require('../controllers/postsControllers'); //Importa tutte le funzioni del controller(definite in controller/postsController) dentro il file (Router/posts.js) per consentire alle rotte specifiche (definite qui in Routers/posts.js) di usare la logica del controller.
